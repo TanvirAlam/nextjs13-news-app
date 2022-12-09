@@ -16,7 +16,7 @@ export default function ReadMoreBtn({ article }: Props) {
       .map(([key, value]) => `${key}=${value}`)
       .join("&");
 
-    const url = `/article?${queryString}`;
+    const url = `/components/article?${queryString}`;
     router.push(url);
   };
 
