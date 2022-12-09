@@ -5,7 +5,7 @@ type Article = {
     description: string;
     image: string | null;
     language: string;
-    publish_at: string;
+    published_at: string;
     source: string;
     title: string;
     url: string;

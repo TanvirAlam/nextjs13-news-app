@@ -15,7 +15,14 @@ const config = {
   },
   experimental:{appDir: true},
   images: {
-    domains: ["static.independent.co.uk", "i.dailymail.co.uk", "www.expressandstar.com", "media.zenfs.com"]
+    domains: [
+      "static.independent.co.uk", 
+      "i.dailymail.co.uk", 
+      "www.expressandstar.com", 
+      "media.zenfs.com", 
+      "static.standard.co.uk",
+      "metro.co.uk"
+    ]
   }
 };
 export default config;

@@ -2,7 +2,6 @@ import { gql } from "graphql-request";
 import type { Category } from "@/src/types/typings";
 import sortNews from "./sortNews";
 
-//access_key: process.env.MEDIASTACK_API_KEY
 const fetchNews = async (
     category?: Category | string,
     keywords?: string,
@@ -68,5 +67,3 @@ const fetchNews = async (
 }
 
 export default fetchNews
-
-    // stepzen import curl "http://api.mediastack.com/v1/news?access_key=87010cd245aba300be929a8c7a23aec9&sources=business,sports"

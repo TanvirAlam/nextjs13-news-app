@@ -9,7 +9,6 @@ type Props = {
 };
 
 export default function Article({ article }: Props) {
-  console.log(article);
   return (
     <article>
       {article.image && (
@@ -21,6 +20,19 @@ export default function Article({ article }: Props) {
           height="200"
         />
       )}
+
+      <div>
+        <div>
+          <h2>{article.title}</h2>
+          <section>
+            <p>{article.description}</p>
+          </section>
+          <footer>
+            <p>{article.source}</p>
+            <p>{article.published_at}</p>
+          </footer>
+        </div>
+      </div>
     </article>
   );
 }
