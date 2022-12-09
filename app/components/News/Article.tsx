@@ -3,6 +3,7 @@
 import type { Article } from "@/src/types/typings";
 import Image from "next/image";
 import React from "react";
+import ReadMoreBtn from "./ReadMoreBtn";
 
 type Props = {
   article: Article;
@@ -32,7 +33,7 @@ export default function Article({ article }: Props) {
             <p>{article.published_at}</p>
           </footer>
         </div>
-        {/* Read more */}
+        <ReadMoreBtn article={article} />
       </div>
     </article>
   );
