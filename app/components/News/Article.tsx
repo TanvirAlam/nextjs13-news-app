@@ -12,7 +12,7 @@ type Props = {
 
 export default function Article({ article }: Props) {
   return (
-    <article className="reounded-lg flex flex-col bg-slate-100 shadow-sm transition-all duration-200 ease-out hover:scale-105 hover:bg-slate-200 hover:shadow-lg dark:bg-slate-800">
+    <article className="reounded-lg flex flex-col bg-slate-100 shadow-lg transition-all duration-200 ease-out hover:scale-105 hover:bg-slate-200 hover:shadow-xl dark:bg-slate-800">
       {article.image && (
         <Image
           src={article.image}
