@@ -12,7 +12,7 @@ export default function SearchBox() {
     e.preventDefault();
     if (!input) return;
 
-    router.push(`/search?term=${input}`);
+    router.push(`/components/Search?term=${input}`);
   };
 
   return (
