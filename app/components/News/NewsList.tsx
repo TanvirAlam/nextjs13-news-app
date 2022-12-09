@@ -10,7 +10,6 @@ const generateKey = (pre: string) => {
 };
 
 export default function NewsList({ news }: Props) {
-  console.log(news);
   return (
     <main className="lg:gird-cols-3 grid grid-cols-1 gap-10 p-10 md:grid-cols-2">
       {news.data.map((article: Article) => (

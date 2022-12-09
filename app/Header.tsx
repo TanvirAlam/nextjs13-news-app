@@ -4,6 +4,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import NavLinks from "./components/Navigation/NavLinks";
 import SearchBox from "./components/Search/SearchBox";
+import DarkModeBtn from "./components/Navigation/DarkModeBtn";
 
 export default function Header() {
   return (
@@ -21,6 +22,7 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center justify-end space-x-2">
+          <DarkModeBtn />
           <button className="hidden rounded-full bg-slate-900 px-4 py-2 text-white dark:bg-slate-800 md:inline lg:px-8 lg:py-4">
             Subscribe Now!
           </button>
