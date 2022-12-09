@@ -13,6 +13,9 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  experimental:{appDir: true}
+  experimental:{appDir: true},
+  images: {
+    domains: ["static.independent.co.uk", "i.dailymail.co.uk", "www.expressandstar.com", "media.zenfs.com"]
+  }
 };
 export default config;
