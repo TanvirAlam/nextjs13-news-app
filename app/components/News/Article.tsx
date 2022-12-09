@@ -3,6 +3,7 @@
 import type { Article } from "@/src/types/typings";
 import Image from "next/image";
 import React from "react";
+import LiveTimestamp from "../LiveTimestamp";
 import ReadMoreBtn from "./ReadMoreBtn";
 
 type Props = {
@@ -30,7 +31,9 @@ export default function Article({ article }: Props) {
           </section>
           <footer className="ml-auto flex flex-col space-x-1 pt-5 text-right text-xs italic text-gray-400">
             <p>{article.source}</p>
-            <p>{article.published_at}</p>
+            <p>
+              <LiveTimestamp time={article.published_at} />
+            </p>
           </footer>
         </div>
         <ReadMoreBtn article={article} />

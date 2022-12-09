@@ -1,6 +1,7 @@
 import type { Article } from "@/src/types/typings";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import LiveTimestamp from "../LiveTimestamp";
 
 type Props = {
   searchParams?: Article;
@@ -33,7 +34,9 @@ export default function ArticlePage({ searchParams }: Props) {
           <div className="flex space-x-4 divide-x-2">
             <h2 className="font-bold">By: {article.author}</h2>
             <h2 className="pl-4 font-bold">Source: {article.source}</h2>
-            <p className="pl-4">{article.published_at}</p>
+            <p className="pl-4">
+              <LiveTimestamp time={article.published_at} />
+            </p>
           </div>
           <p className="pt-4">{article.description}</p>
         </div>
