@@ -21,7 +21,8 @@ const config = {
       "www.expressandstar.com", 
       "media.zenfs.com", 
       "static.standard.co.uk",
-      "metro.co.uk"
+      "metro.co.uk",
+      "i.guim.co.uk"
     ]
   }
 };
