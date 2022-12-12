@@ -41,3 +41,12 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - `--save-dev`
 
 - `.eslintignore`
+
+
+### Desktop
+
+![images/Peek_2022-12-12_19-25.gif](images/Peek_2022-12-12_19-25.gif)
+
+### Mobile
+
+![images/Peek_2022-12-12_19-26.gif](images/Peek_2022-12-12_19-26.gif)
